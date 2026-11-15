@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Redtail | Know the Law. Own Your Keys. | MindOnesBusiness</title>
+  <meta name="description" content="Redtail teaches law and blockchain in plain words. Learn your rights, how court works, and how to hold your own Bitcoin. Part of the MindOnesBusiness family.">
+  <link rel="canonical" href="https://redtail.mindonesbusiness.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="MindOnesBusiness">
+  <meta property="og:title" content="Redtail: Know the law. Own your keys.">
+  <meta property="og:description" content="Law and blockchain, taught in plain words. Part of the MindOnesBusiness family.">
+  <meta property="og:url" content="https://redtail.mindonesbusiness.com/">
+  <meta property="og:image" content="https://redtail.mindonesbusiness.com/og-redtail.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Redtail: a geometric red fox with glowing eyes. Know the law. Own your keys.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://redtail.mindonesbusiness.com/og-redtail.jpg">
+  <meta name="theme-color" content="#0d1016">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+:root{
+  --night:#0d1016; --night2:#141822; --panel:#171c27; --line:#2a3242;
+  --fox:#E8562A; --fox2:#F47A3A; --btc:#F7931A; --neon:#2EE6D6; --ivory:#F3EFE5; --muted:#b9bfcc;
+  --display:"Orbitron","Arial Black",system-ui,sans-serif; --body:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--night);color:var(--ivory);font-family:var(--body);font-size:1.0625rem;line-height:1.65}
+img,svg{max-width:100%;display:block}
+a{color:var(--neon)}
+a:hover{color:#fff}
+:focus-visible{outline:3px solid var(--neon);outline-offset:3px;border-radius:4px}
+.skip-link{position:absolute;left:-999px;top:8px;background:var(--fox);color:#0d1016;padding:.6rem 1rem;border-radius:8px;font-weight:800;z-index:99}
+.skip-link:focus{left:8px}
+.visually-hidden{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.container{width:min(1120px,100% - 32px);margin-inline:auto}
+h1,h2,h3{margin:0 0 .5em;line-height:1.15}
+h1,h2{font-family:var(--display);font-weight:900;letter-spacing:.03em;text-transform:uppercase}
+h1{font-size:clamp(2rem,7.4vw,3.6rem)}
+h2{font-size:clamp(1.4rem,4.4vw,2.1rem)}
+h3{font-size:1.25rem;font-weight:800}
+p{margin:0 0 1em}
+.kicker{font-family:var(--display);font-weight:700;font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--neon);margin-bottom:.9rem}
+.center{text-align:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:50px;padding:.75rem 1.6rem;border-radius:10px;font-weight:800;text-decoration:none;border:2px solid var(--fox);font-family:inherit;font-size:1rem;cursor:pointer;transition:transform .15s,box-shadow .15s,background .15s}
+.btn-fox{background:linear-gradient(135deg,var(--fox),var(--btc));color:#0d1016;border-color:transparent;box-shadow:0 0 0 rgba(247,147,26,0)}
+.btn-fox:hover{color:#0d1016;transform:translateY(-2px);box-shadow:0 10px 30px rgba(247,147,26,.35)}
+.btn-line{background:transparent;color:var(--ivory);border-color:var(--neon)}
+.btn-line:hover{background:rgba(46,230,214,.1);color:#fff}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding:4.5rem 0 5rem;background:
+  radial-gradient(ellipse at 75% 30%,rgba(232,86,42,.22),transparent 55%),
+  radial-gradient(ellipse at 15% 80%,rgba(46,230,214,.10),transparent 50%),var(--night)}
+.grid-floor{position:absolute;left:-20%;right:-20%;bottom:-40%;height:70%;pointer-events:none;opacity:.35;
+  background-image:linear-gradient(rgba(46,230,214,.35) 1px,transparent 1px),linear-gradient(90deg,rgba(46,230,214,.35) 1px,transparent 1px);
+  background-size:48px 48px;transform:perspective(420px) rotateX(62deg);transform-origin:top;
+  mask-image:linear-gradient(to bottom,transparent,#000 30%,#000 70%,transparent);-webkit-mask-image:linear-gradient(to bottom,transparent,#000 30%,#000 70%,transparent)}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:2.5rem;align-items:center}
+.hero h1 .l2{display:block;background:linear-gradient(90deg,var(--fox2),var(--btc));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero h1 .l1{display:block;text-shadow:2px 0 rgba(46,230,214,.35),-2px 0 rgba(232,86,42,.35)}
+.lead{font-size:1.15rem;max-width:34rem}
+.actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.4rem}
+.note{font-size:.92rem;color:var(--muted);margin-top:1rem}
+.fox-wrap{position:relative;width:min(380px,82%);margin-inline:auto;aspect-ratio:1}
+.fox-wrap::before{content:"";position:absolute;inset:-6%;border-radius:50%;border:2px dashed rgba(46,230,214,.45);animation:spin 40s linear infinite}
+.fox-wrap::after{content:"\20BF";position:absolute;right:-2%;bottom:4%;width:74px;height:74px;border-radius:50%;display:grid;place-items:center;background:var(--btc);color:#0d1016;font-weight:900;font-size:2.4rem;box-shadow:0 0 28px rgba(247,147,26,.55)}
+.fox{width:100%;height:100%;filter:drop-shadow(0 0 30px rgba(232,86,42,.45));animation:shift 7s ease-in-out infinite}
+.fox polygon{transition:fill .4s}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes shift{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+
+/* sections */
+section{padding:4.5rem 0}
+.alt{background:var(--night2);border-block:1px solid var(--line)}
+.pillars{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;margin-top:2rem}
+.pillar{position:relative;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:1.8rem;overflow:hidden}
+.pillar::before{content:"";position:absolute;inset:0 0 auto 0;height:3px;background:linear-gradient(90deg,var(--fox),var(--btc),var(--neon))}
+.pillar .tag{font-family:var(--display);font-size:.72rem;letter-spacing:.2em;color:var(--neon);text-transform:uppercase}
+.pillar h3{font-family:var(--display);text-transform:uppercase;letter-spacing:.04em;font-size:1.5rem;margin:.3rem 0 .2rem;color:var(--ivory)}
+.pillar .motto{color:var(--btc);font-weight:800;margin-bottom:.8rem}
+.pillar ul{list-style:none;padding:0;margin:1rem 0 0}
+.pillar li{position:relative;padding:.45rem 0 .45rem 1.6rem;border-top:1px dashed var(--line)}
+.pillar li::before{content:"";position:absolute;left:0;top:.95rem;width:10px;height:10px;transform:rotate(45deg);background:var(--fox)}
+.pillar .fine{font-size:.88rem;color:var(--muted);margin:1rem 0 0}
+.steps{list-style:none;padding:0;margin:2rem auto 0;max-width:820px;display:grid;gap:12px;counter-reset:s}
+.steps li{counter-increment:s;display:flex;gap:16px;align-items:flex-start;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.steps li::before{content:"0" counter(s);flex:none;font-family:var(--display);font-weight:900;color:var(--neon);font-size:1.2rem;min-width:40px}
+.about{display:grid;grid-template-columns:auto 1fr;gap:2rem;align-items:center;max-width:900px;margin-inline:auto}
+.about .mini{width:120px;height:120px}
+.socials{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1rem}
+.cta-box{max-width:720px;margin:0 auto;text-align:center;background:var(--panel);border:1px solid var(--fox);border-radius:18px;padding:2.2rem 1.6rem;box-shadow:0 0 50px rgba(232,86,42,.15)}
+.cta-box .btn{margin-top:.6rem}
+.donate-box{margin-top:1.4rem;border-color:var(--neon);box-shadow:0 0 40px rgba(46,230,214,.12)}
+.mob-link-back{display:inline-flex;align-items:center;gap:.4rem;font-weight:700}
+
+@media (max-width:860px){
+  .hero-grid,.pillars{grid-template-columns:1fr}
+  .hero{padding:3rem 0 4rem}
+  .about{grid-template-columns:1fr;text-align:center}
+  .about .mini{margin-inline:auto}
+  .socials{justify-content:center}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* Redtail skin for the shared MOB header + footer */
+.redtail .mob-header{background:rgba(13,16,22,.94);border-bottom-color:rgba(232,86,42,.45)}
+.redtail .mob-link[aria-current="page"],.redtail .mob-link:hover{color:var(--fox2)}
+.redtail .mob-link[aria-current="page"]{box-shadow:inset 0 -2px 0 var(--fox)}
+.redtail .mob-cta{background:linear-gradient(135deg,var(--fox),var(--btc));color:#0d1016}
+.redtail .mob-cta:hover{background:var(--ivory)}
+.redtail .mob-toggle{border-color:var(--fox)}
+.redtail .mob-season{background:linear-gradient(90deg,#0d1016,#1d2230 50%,#0d1016);border-bottom-color:rgba(232,86,42,.35)}
+.redtail .mob-season svg{color:var(--btc)}
+.redtail .mob-footer{background:#090b10;border-top-color:rgba(232,86,42,.45)}
+.redtail .mob-foot-links a{color:var(--fox2)}
+@media (max-width:1240px){.redtail .mob-menu{background:#0d1016;border-bottom-color:rgba(232,86,42,.45)}.redtail .mob-link[aria-current="page"]{box-shadow:inset 3px 0 0 var(--fox)}}
+
+/* ===== Shared header + footer (same on every MindOnesBusiness site) ===== */
+.mob-header { position: sticky; top: 0; z-index: 60; background: rgba(21,44,40,.96); border-bottom: 1px solid rgba(183,155,98,.35); backdrop-filter: blur(8px); }
+.mob-nav { position: relative; display: flex; align-items: center; justify-content: space-between; gap: 12px; width: min(1180px, 100% - 32px); margin-inline: auto; min-height: 68px; }
+.mob-brand { display: flex; align-items: center; gap: 10px; text-decoration: none; flex: none; }
+.mob-mark { width: 36px; height: 36px; border-radius: 50%; }
+.mob-word { height: 34px; width: auto; }
+.mob-menu { list-style: none; margin: 0; padding: 0; display: flex; align-items: center; gap: 2px; }
+.mob-link { display: inline-flex; align-items: center; min-height: 44px; padding: 0 10px; color: #F3EFE5; font-weight: 700; font-size: .98rem; text-decoration: none; border-radius: 8px; white-space: nowrap; }
+.mob-link:hover { color: #B79B62; }
+.mob-link[aria-current="page"] { color: #B79B62; box-shadow: inset 0 -2px 0 #B79B62; border-radius: 0; }
+.mob-soon { margin-left: 6px; font-size: .62rem; letter-spacing: .08em; text-transform: uppercase; color: #B79B62; border: 1px solid #B79B62; border-radius: 999px; padding: 1px 6px; }
+.mob-cta { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; margin-left: 8px; padding: 0 20px; border-radius: 999px; background: #B79B62; color: #202423; font-weight: 800; text-decoration: none; white-space: nowrap; }
+.mob-cta:hover { background: #F3EFE5; color: #202423; }
+.mob-link:focus-visible, .mob-cta:focus-visible, .mob-toggle:focus-visible, .mob-brand:focus-visible, .mob-foot-links a:focus-visible { outline: 3px solid #F3EFE5; outline-offset: 3px; }
+.mob-toggle { display: none; }
+@media (max-width: 1240px) {
+  .mob-toggle { display: inline-flex; flex-direction: column; justify-content: center; gap: 5px; width: 48px; height: 48px; padding: 0 12px; background: transparent; border: 1px solid #B79B62; border-radius: 12px; cursor: pointer; }
+  .mob-toggle span { display: block; height: 2px; background: #F3EFE5; border-radius: 2px; transition: transform .2s, opacity .2s; }
+  .mob-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .mob-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+  .mob-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+  .mob-menu { display: none; position: absolute; top: 100%; left: -16px; right: -16px; flex-direction: column; align-items: stretch; gap: 0; padding: 8px 16px 18px; background: #152C28; border-bottom: 1px solid rgba(183,155,98,.35); box-shadow: 0 16px 30px rgba(0,0,0,.45); }
+  .mob-menu.open { display: flex; }
+  .mob-menu li { width: 100%; }
+  .mob-link { display: flex; width: 100%; min-height: 50px; font-size: 1.05rem; border-bottom: 1px solid rgba(243,239,229,.12); border-radius: 0; }
+  .mob-link[aria-current="page"] { box-shadow: inset 3px 0 0 #B79B62; padding-left: 14px; }
+  .mob-cta { display: flex; width: 100%; margin: 12px 0 0; min-height: 50px; }
+}
+@media (max-width: 380px) { .mob-word { height: 28px; } .mob-mark { display: none; } }
+.mob-footer { background: #202423; border-top: 1px solid rgba(183,155,98,.35); padding: 36px 0 30px; color: #F3EFE5; text-align: center; }
+.mob-foot-wrap { width: min(1120px, 100% - 32px); margin-inline: auto; display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.mob-foot-links { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 20px; }
+.mob-foot-links a { display: inline-flex; align-items: center; min-height: 44px; color: #B79B62; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; overflow-wrap: anywhere; }
+.mob-foot-links a:hover { color: #F3EFE5; }
+.mob-note, .mob-copy { margin: 0; font-size: .92rem; color: #d6d0c3; }
+@media (prefers-reduced-motion: reduce) { .mob-toggle span { transition: none; } }
+
+.mob-season { display: flex; align-items: center; justify-content: center; gap: 10px; padding: 8px 16px; color: #F3EFE5; font-size: .9rem; font-weight: 600; letter-spacing: .04em; text-align: center; border-bottom: 1px solid; }
+.mob-season svg { width: 16px; height: 16px; flex: none; }
+.mob-season[hidden] { display: none !important; }
+  </style>
+</head>
+<body class="redtail">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="mob-season" data-season-end="2026-12-01T00:00:00-06:00"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 1.8c-1.4 2.6-1.2 4.6-.1 6.3C10.2 6.9 7.6 6.6 4.9 7.9c2 1 3.1 2.6 3.4 4.3-1.8-.3-3.9.3-5.4 2.2 2.3.3 4.1 1 5.3 2.4L7 21.2l3.8-2.7.7 4.1h1l.7-4.1 3.8 2.7-1.2-4.4c1.2-1.4 3-2.1 5.3-2.4-1.5-1.9-3.6-2.5-5.4-2.2.3-1.7 1.4-3.3 3.4-4.3-2.7-1.3-5.3-1-7 .2 1.1-1.7 1.3-3.7-.1-6.3z"/></svg><span>This November, we give thanks for you.</span><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 1.8c-1.4 2.6-1.2 4.6-.1 6.3C10.2 6.9 7.6 6.6 4.9 7.9c2 1 3.1 2.6 3.4 4.3-1.8-.3-3.9.3-5.4 2.2 2.3.3 4.1 1 5.3 2.4L7 21.2l3.8-2.7.7 4.1h1l.7-4.1 3.8 2.7-1.2-4.4c1.2-1.4 3-2.1 5.3-2.4-1.5-1.9-3.6-2.5-5.4-2.2.3-1.7 1.4-3.3 3.4-4.3-2.7-1.3-5.3-1-7 .2 1.1-1.7 1.3-3.7-.1-6.3z"/></svg></div>
+  <header class="mob-header">
+    <nav class="mob-nav" aria-label="Main navigation">
+      <a class="mob-brand" href="https://www.mindonesbusiness.com/">
+        <img src="https://www.mindonesbusiness.com/favicon.svg" alt="" width="36" height="36" class="mob-mark">
+        <img src="https://www.mindonesbusiness.com/logo-wordmark.png" alt="MindOnesBusiness home" width="153" height="36" class="mob-word">
+      </a>
+      <button class="mob-toggle" type="button" aria-controls="mob-menu" aria-expanded="false" aria-label="Open menu"><span></span><span></span><span></span></button>
+      <ul class="mob-menu" id="mob-menu">
+        <li><a class="mob-link" href="https://www.mindonesbusiness.com/">Home</a></li>
+        <li><a class="mob-link" href="https://codex.mindonesbusiness.com/">Codex of the 7 Gates</a></li>
+        <li><a class="mob-link" href="https://mobile.mindonesbusiness.com/">MOB Vault</a></li>
+        <li><a class="mob-link" href="https://talk.mindonesbusiness.com/">Trick Talk</a></li>
+        <li><a class="mob-link" href="https://music.mindonesbusiness.com/">Music Room <span class="mob-soon">Soon</span></a></li>
+        <li><a class="mob-link" href="https://redtail.mindonesbusiness.com/" aria-current="page">Redtail</a></li>
+        <li><a class="mob-cta" href="https://www.mindonesbusiness.com/#testimonials">Apply</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="grid-floor" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div>
+          <p class="kicker">Redtail &middot; Law + Blockchain</p>
+          <h1 id="hero-title"><span class="l1">Know the law.</span><span class="l2">Own your keys.</span></h1>
+          <p class="lead">A fox is quick, smart, and hard to trap. Redtail teaches you to be the same. Learn your rights, how court works, and how to hold your own Bitcoin. All in plain words.</p>
+          <div class="actions">
+            <a class="btn btn-fox" href="https://buy.stripe.com/cNifZhehl4fQ1my2Ml38407" id="main-cta">Book a session</a>
+            <a class="btn btn-line" href="#pillars">See what we teach</a>
+          </div>
+          <p class="note">You don&rsquo;t need to be a lawyer to know the law. You only need to be equipped.</p>
+        </div>
+        <div class="fox-wrap"><svg class="fox" viewBox="0 0 200 200" aria-hidden="true" focusable="false"><g stroke="#0d1016" stroke-width="1.5" stroke-linejoin="round"><polygon points="40,22 78,74 30,92" fill="#C2401C"/><polygon points="160,22 122,74 170,92" fill="#C2401C"/><polygon points="47,40 70,73 40,84" fill="#3a1a12"/><polygon points="153,40 130,73 160,84" fill="#3a1a12"/><polygon points="30,92 78,74 100,86 100,112 52,122" fill="#F06A32"/><polygon points="170,92 122,74 100,86 100,112 148,122" fill="#D9481F"/><polygon points="30,92 52,122 100,162 100,178 56,152" fill="#F3EFE5"/><polygon points="170,92 148,122 100,162 100,178 144,152" fill="#E1DACB"/><polygon points="52,122 100,112 100,162" fill="#E8562A"/><polygon points="148,122 100,112 100,162" fill="#C9441C"/><polygon points="91,163 109,163 100,178" fill="#111"/><polygon points="60,110 86,117 66,122" fill="#2EE6D6"/><polygon points="140,110 114,117 134,122" fill="#2EE6D6"/></g></svg></div>
+      </div>
+    </section>
+
+    <section class="alt" id="pillars" aria-labelledby="pillars-title">
+      <div class="container">
+        <p class="kicker center">Two skills. One fox.</p>
+        <h2 class="center" id="pillars-title">What Redtail teaches</h2>
+        <div class="pillars">
+          <article class="pillar">
+            <span class="tag">Pillar 01</span>
+            <h3>Law</h3>
+            <p class="motto">Standing without fear.</p>
+            <p>Learn the rules so you can speak for yourself, calm and clear.</p>
+            <ul>
+              <li>How to speak for yourself in court, step by step</li>
+              <li>Knowing your rights, and how to use them</li>
+              <li>Trusts and setting up a business the right way</li>
+              <li>Keeping good records and building your case file</li>
+            </ul>
+            <p class="fine">We teach. We are not lawyers, and this is not legal advice.</p>
+          </article>
+          <article class="pillar">
+            <span class="tag">Pillar 02</span>
+            <h3>Blockchain</h3>
+            <p class="motto">Building on rock, not sand.</p>
+            <p>Learn tools no one can shut off, so you keep your voice and your money.</p>
+            <ul>
+              <li>Blockchain basics, and why a record that can&rsquo;t be changed matters</li>
+              <li>NOSTR: talk and post where no one can silence you</li>
+              <li>Self-custody wallets: hold your own Bitcoin keys</li>
+              <li>Depend less on big platforms and banks</li>
+            </ul>
+            <p class="fine">For learning only. Not financial advice.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="how-title">
+      <div class="container">
+        <p class="kicker center">How it works</p>
+        <h2 class="center" id="how-title">Shift into a sharper you</h2>
+        <ol class="steps">
+          <li><span><strong>Talk with us.</strong> Tell us where you are stuck: a court case, a business, or your first Bitcoin wallet.</span></li>
+          <li><span><strong>Get a plan.</strong> We give you clear steps, in plain words, that fit your life.</span></li>
+          <li><span><strong>Learn by doing.</strong> We walk with you while you practice, so you build real skill.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="alt" aria-labelledby="about-title">
+      <div class="container about">
+        <svg class="fox mini" viewBox="0 0 200 200" aria-hidden="true" focusable="false"><g stroke="#0d1016" stroke-width="1.5" stroke-linejoin="round"><polygon points="40,22 78,74 30,92" fill="#C2401C"/><polygon points="160,22 122,74 170,92" fill="#C2401C"/><polygon points="47,40 70,73 40,84" fill="#3a1a12"/><polygon points="153,40 130,73 160,84" fill="#3a1a12"/><polygon points="30,92 78,74 100,86 100,112 52,122" fill="#F06A32"/><polygon points="170,92 122,74 100,86 100,112 148,122" fill="#D9481F"/><polygon points="30,92 52,122 100,162 100,178 56,152" fill="#F3EFE5"/><polygon points="170,92 148,122 100,162 100,178 144,152" fill="#E1DACB"/><polygon points="52,122 100,112 100,162" fill="#E8562A"/><polygon points="148,122 100,112 100,162" fill="#C9441C"/><polygon points="91,163 109,163 100,178" fill="#111"/><polygon points="60,110 86,117 66,122" fill="#2EE6D6"/><polygon points="140,110 114,117 134,122" fill="#2EE6D6"/></g></svg>
+        <div>
+          <p class="kicker">Part of the MindOnesBusiness family</p>
+          <h2 id="about-title">Why a fox?</h2>
+          <p>A red fox can change its path in a blink. It lives in the woods and in the city. It learns fast and does not panic. That is the spirit of Redtail: stay calm, stay sharp, and keep moving.</p>
+          <p>Redtail is the law and Bitcoin side of <a href="https://www.mindonesbusiness.com/">MindOnesBusiness</a>. Members can also learn and talk in the <a href="https://mobile.mindonesbusiness.com/">MOB Vault</a> and live in <a href="https://talk.mindonesbusiness.com/">Trick Talk</a>.</p>
+          <div class="socials">
+            <a class="btn btn-line" href="https://www.tiktok.com/@redtail_m1b">Follow on TikTok</a>
+            <a class="btn btn-line" href="https://www.youtube.com/@mindonesbusiness">Watch on YouTube</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="start" aria-labelledby="start-title">
+      <div class="container">
+        <div class="cta-box">
+          <p class="kicker">Ready, fox?</p>
+          <h2 id="start-title">Start with a talk</h2>
+          <p>Book a one-on-one session. Tell us where you are stuck, and we will make a plan together.</p>
+          <a class="btn btn-fox" href="https://buy.stripe.com/cNifZhehl4fQ1my2Ml38407">Book a session</a>
+          <p class="note">Questions first? Email <a href="mailto:admin@mindonesbusiness.com?subject=Redtail%20question">admin@mindonesbusiness.com</a>.</p>
+        </div>
+        <div class="cta-box donate-box">
+          <p class="kicker">Feed the fox</p>
+          <h2>Support Redtail</h2>
+          <p>Like what we teach? A gift helps us keep making free videos and lessons.</p>
+          <a class="btn btn-line" href="https://buy.stripe.com/fZu7sL0qv13EaX83Qp38406">Donate to Redtail</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mob-footer">
+    <div class="mob-foot-wrap">
+      <a class="mob-brand" href="https://www.mindonesbusiness.com/"><img src="https://www.mindonesbusiness.com/favicon.svg" alt="" width="32" height="32" class="mob-mark" loading="lazy"><img src="https://www.mindonesbusiness.com/logo-wordmark.png" alt="MindOnesBusiness home" width="136" height="32" class="mob-word" loading="lazy"></a>
+      <nav aria-label="Footer">
+        <ul class="mob-foot-links">
+          <li><a href="https://privacy.mindonesbusiness.com/">Privacy</a></li>
+          <li><a href="https://terms.mindonesbusiness.com/">Terms</a></li>
+          <li><a href="mailto:admin@mindonesbusiness.com">admin@mindonesbusiness.com</a></li>
+        </ul>
+      </nav>
+      <p class="mob-note">For learning only. Not medical, mental health or legal advice.</p>
+      <p class="mob-copy">&copy; 2026 Parallel Construction LLC. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+  // Header menu (opens and closes on phones)
+  (function () {
+    var t = document.querySelector('.mob-toggle'), m = document.getElementById('mob-menu');
+    if (!t || !m) return;
+    function set(open) {
+      m.classList.toggle('open', open);
+      t.setAttribute('aria-expanded', String(open));
+      t.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    }
+    t.addEventListener('click', function () { set(!m.classList.contains('open')); });
+    m.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', function () { set(false); }); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && m.classList.contains('open')) { set(false); t.focus(); } });
+    document.addEventListener('click', function (e) { if (m.classList.contains('open') && !m.contains(e.target) && !t.contains(e.target)) set(false); });
+  })();
+  </script>
+  <script>
+  // Hide the November bar on Dec 1
+  (function () { var b = document.querySelector('.mob-season'); if (b && Date.now() >= Date.parse(b.getAttribute('data-season-end'))) b.hidden = true; })();
+  </script>
+</body>
+</html>
